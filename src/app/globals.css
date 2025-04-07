@@ -19,11 +19,22 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --font: "Manrope", sans-serif;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Manrope";
+  font-family: var(--font);
+}
+
+/* Skjul scrollbar på mobilen */
+section::-webkit-scrollbar {
+  display: none; /* Skjuler scrollbaren */
+}
+
+section {
+  -ms-overflow-style: none; /* For IE og Edge */
+  scrollbar-width: none; /* For Firefox */
 }
