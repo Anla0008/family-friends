@@ -25,12 +25,12 @@ const Navigation = () => {
                 </li>
                 <li>
                     <Link href="#">
-                        <FaRegMessage size={24} className={pathname === "#" ? "text-red-300" : "text-neutral-400"} />
+                        <FaRegMessage size={24} className="text-neutral-400" />
                     </Link>
                 </li>
                 <li>
                     <Link href="#">
-                        <VscAccount size={24} className={pathname === "#" ? "text-red-300" : "text-neutral-400"} />
+                        <VscAccount size={24} className="text-neutral-400" />
                     </Link>
                 </li>
             </ul>
