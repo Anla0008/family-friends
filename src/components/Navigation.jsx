@@ -11,7 +11,7 @@ import { VscAccount } from "react-icons/vsc";
 const Navigation = () => {
     const pathname = usePathname();
     return (
-        <nav className="fixed bottom-5 left-5 right-5">
+        <nav className="fixed bottom-0 left-0 right-0 bg-white py-3 px-4 shadow-lg">
             <ul className="flex justify-between">
                 <li>
                     <Link href="/">
@@ -39,4 +39,3 @@ const Navigation = () => {
 }
 
 export default Navigation;
-
