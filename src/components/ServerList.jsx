@@ -7,10 +7,9 @@ const ServerList = async () => {
         },
     });
     const animals = await data.json();
+    console.log(animals);
 
-    console.log("Data fra API i ServerList:", animals); // Log for at tjekke hvad vi modtager fra API'et
-
-    return <ClientList data={animals} />;
+    return <ClientList data={animals}></ClientList>;
 };
 
 export default ServerList;
